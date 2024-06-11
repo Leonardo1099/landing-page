@@ -1,0 +1,36 @@
+#section-hero {
+    display: flex;
+    width: 79rem;
+    flex-direction: column;
+    border-radius: 2rem;
+    padding: 2rem;
+    background-color: #00bfff;
+}
+
+#section-hero > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+h2 {
+    color: #ffd700;
+}
+
+button {
+    margin: auto;
+    margin-top: 1rem;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    background-color: #FF1493;
+}

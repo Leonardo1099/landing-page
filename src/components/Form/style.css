@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#section-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 3rem;
+    width: 12rem;
+    padding: 3rem;
+}
+
+#section-form > form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.fieldset-form {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.fieldset-form > input {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+#section-form > form > button {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}

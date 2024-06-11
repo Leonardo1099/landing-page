@@ -1,48 +1,50 @@
-import { useState } from "react";
 import "./App.css";
+import Form from "./components/Title";
 
 function App() {
-  //let name: string;
-  let [name, setName] = useState<string>();
-  let [cpf, setCpf] = useState<string>();
-  let [adress, setAdress] = useState<string>();
-  let [tel, setTel] = useState<number>();
-  let [country, setCountry] = useState<string>();
+  return (
+    <div
+      style={{
+        display : "flex",
+        flexDirection : "column",
+        justifyContent : "center",
+        alignItems : "center",
+        width : "100vw",
+      }}
+    >
+      <Form />
+    </div>
+  );
+}
+
+export default App;
+
+import "./App.css";
+import Form from "./components/Form";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+
+function App() {
 
   return (
-    <>
-      <section>
-        <form action="submit">
-          <fieldset>
-            <label htmlFor="name">Nome:</label>
-            <input name='name' type="text" onChange={(e)=>setName(e.target.value)} value={name}/>
-          </fieldset>
+    <div 
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        width: "100vw",
+      }}>
 
-          <fieldset>
-            <label htmlFor="cpf">CPF:</label>
-            <input name='cpf' type="text" onChange={(e)=>setCpf(e.target.value)} value={cpf}/>
-          </fieldset>
+      <Header/>
 
-          <fieldset>
-            <label htmlFor="adress">Endereço:</label>
-            <input name='adress' type="text" onChange={(e)=>setAdress(e.target.value)} value={adress}/>
-          </fieldset>
+      <Hero/>
 
-          <fieldset>
-            <label htmlFor="tel">Telefone:</label>
-            <input name='tel' type="text" onChange={(e)=>setTel(e.target.value)} value={tel}/>
-          </fieldset>
+      <Form/>
 
-          <fieldset>
-            <label htmlFor="country">Cidade:</label>
-            <input name='country' type="text" onChange={(e)=>setCountry(e.target.value)} value={country}/>
-          </fieldset>
-
-          <button type ></button>
-        </form>
-      </section>
-    </>
+    </div>
   );
+
 }
 
 export default App;

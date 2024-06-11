@@ -2,13 +2,12 @@ import { useState } from "react";
 import './style.css'
 
 function Form() {
-  // const name = 'Chloe';
-  // const name: string;
+  //const name: string;
   const [name, setName] = useState<string>('');
-  const [lastname, setLastname] = useState<string>('');
   const [cpf, setCpf] = useState<string>('');
-  const [age, setAge] = useState<number | string>('');
-  const [cep, setCep] = useState<string>('');
+  const [adress, setAdress] = useState<string>('');
+  const [tel, setTel] = useState<number | string>('');
+  const [email, setEmail] = useState<string>('');
 
   return (
     <>
@@ -25,16 +24,6 @@ function Form() {
           </fieldset>
 
           <fieldset className="fieldset-form">
-            <label htmlFor="lastname">Sobrenome:</label>
-            <input
-              name="lastname"
-              type="text"
-              onChange={(e) => setLastname(e.target.value)}
-              value={lastname}
-            />
-          </fieldset>
-
-          <fieldset className="fieldset-form">
             <label htmlFor="cpf">CPF:</label>
             <input
               name="cpf"
@@ -45,41 +34,52 @@ function Form() {
           </fieldset>
 
           <fieldset className="fieldset-form">
-            <label htmlFor="age">Idade:</label>
+            <label htmlFor="tel">Telefone:</label>
             <input
-              name="age"
+              name="tel"
               type="number"
-              onChange={(e) => setAge(Number(e.target.value))}
-              value={age}
+              onChange={(e) => setTel(Number(e.target.value))}
+              value={tel}
             />
-            {/* OU setIdade(+e.target.value) para converter string para number*/}
           </fieldset>
 
           <fieldset className="fieldset-form">
-            <label htmlFor="cep">CEP:</label>
+            <label htmlFor="adress">Endereço:</label>
             <input
-              name="cep"
+              name="adress"
               type="text"
-              onChange={(e) => setCep(e.target.value)}
-              value={cep}
+              onChange={(e) => setAdress(e.target.value)}
+              value={adress}
+            />
+          </fieldset>
+
+          <fieldset className="fieldset-form">
+            <label htmlFor="email">Email:</label>
+            <input
+              name="email"
+              type="text"
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
             />
           </fieldset>
 
           <button type="submit">Enviar</button>
         </form>
 
-        {/* Tag usada para manter mesma a estrutura de texto digitada */}
+        {/* Tag usada para manter a mesma estrutura de texto digitada   */}
         {/* <pre>
-        {`
+          {`
           Seu nome é ${name}
-          Seu sobrenome é ${lastname}
-          Seu CPF é ${cpf}
-          Sua idade é ${age}
-          Seu CEP é ${cep}
-        `}
-        {"Seu nome é " + nome + ", que legal"}
+
+          Seu cpf é ${cpf}
+
+          Seu telefone é ${tel}
+
+          Seu endereço é ${adress}
+
+          Seu email é ${email}`}
         </pre> */}
-       
+
         <div></div>
       </section>
     </>

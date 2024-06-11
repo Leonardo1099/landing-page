@@ -1,32 +1,36 @@
-#section-form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border: 1px solid black ;
-    border-radius: 3rem;
-    width: 15rem;
-    padding: 3rem;
+#section-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 2rem;
+  width: 65.83vw;
+  padding: 2rem;
+  background-color: #00bfff;
 }
 
-#section-form > form{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+#section-form > form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.fieldset-form{
-    display: flex;
-    flex-direction: column;
-    border: none;
+.fieldset-form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  border: 0;
 }
 
-.fieldset-form > input{
-    padding: 0.5rem;
-    border-radius: 0.5rem;
+.fieldset-form > input {
+  width: calc(100% - 4rem);
+  padding: 2rem;
+  border-radius: 0.6rem;
 }
 
-.fieldset-form > form > button{
-    padding: 0.5rem;
-    border-radius: 0.5rem;
+.fieldset-form > label {
+  font-size: 2rem;
+  color: #ffffff;
+  text-shadow: 1px 2px 1px black;
 }

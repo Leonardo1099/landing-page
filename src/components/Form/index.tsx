@@ -1,17 +1,21 @@
 import { useState } from "react";
 import './style.css'
 
+
+
 function Form() {
-  //const name: string;
-  const [name, setName] = useState<string>('');
-  const [cpf, setCpf] = useState<string>('');
-  const [adress, setAdress] = useState<string>('');
-  const [tel, setTel] = useState<number | string>('');
-  const [email, setEmail] = useState<string>('');
+  // const name: string;
+  const [name, setName] = useState<string>("");
+  const [cpf, setCpf] = useState<string>("");
+  const [adress, setAdress] = useState<string>("");
+  const [tel, setTel] = useState<number | string>("");
+  const [country, setCountry] = useState<string>("");
 
   return (
     <>
       <section id="section-form">
+      <h2 className="h2-default">Inscreva-se na nossa Newsletter!</h2>
+      <p className="p-default">Receba atualizações exclusivas sobre o evento, descontos especiais e notícias em primeira mão.</p>
         <form action="submit">
           <fieldset className="fieldset-form">
             <label htmlFor="name">Nome:</label>
@@ -44,9 +48,9 @@ function Form() {
           </fieldset>
 
           <fieldset className="fieldset-form">
-            <label htmlFor="adress">Endereço:</label>
+            <label htmlFor="Adress">Endereço:</label>
             <input
-              name="adress"
+              name="Adress"
               type="text"
               onChange={(e) => setAdress(e.target.value)}
               value={adress}
@@ -54,30 +58,26 @@ function Form() {
           </fieldset>
 
           <fieldset className="fieldset-form">
-            <label htmlFor="email">Email:</label>
+            <label htmlFor="country">Cidade:</label>
             <input
-              name="email"
+              name="country"
               type="text"
-              onChange={(e) => setEmail(e.target.value)}
-              value={email}
+              onChange={(e) => setCountry(e.target.value)}
+              value={country}
             />
           </fieldset>
 
-          <button type="submit">Enviar</button>
+          <button className="button-default" type="submit">Enviar</button>
         </form>
 
-        {/* Tag usada para manter a mesma estrutura de texto digitada   */}
+        {/* Tag usada para manter a mesma estrutura de texto digitada */}
         {/* <pre>
           {`
-          Seu nome é ${name}
-
-          Seu cpf é ${cpf}
-
-          Seu telefone é ${tel}
-
-          Seu endereço é ${adress}
-
-          Seu email é ${email}`}
+            Seu nome é ${name}
+            Seu cpf é ${cpf}
+            Você mora no endereço ${adress}
+            Sua cidade é ${country}
+            Seu telefone é ${tel}`}
         </pre> */}
 
         <div></div>

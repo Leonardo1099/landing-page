@@ -1,8 +1,10 @@
 import "./App.css";
+import Contato from "./components/Contato";
 import Form from "./components/Form";
-import Hero from "./components/Hero";
 import Header from "./components/Header";
-
+import Hero from "./components/Hero";
+import Sobre from "./components/Sobre";
+import Tickets from "./components/Tickets";
 
 function App() {
   return (
@@ -13,11 +15,16 @@ function App() {
         justifyContent: "center",
         alignItems: "center",
         width: "100vw",
+        gap: "2rem",
+        backgroundColor: "#00bfff",
       }}
     >
-      <Form /> 
-      <Hero/>
       <Header />
+      <Hero />
+      <Tickets />
+      <Sobre/>
+      <Contato/>
+      <Form />
     </div>
   );
 }

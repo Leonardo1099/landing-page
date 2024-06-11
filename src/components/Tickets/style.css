@@ -1,0 +1,18 @@
+#section-tickets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 65.83vw;
+}
+
+#section-tickets > img {
+  width: calc(80% - 4rem);
+  border-radius: 2rem;
+  transition: 3s;
+  cursor: pointer;
+  &:hover {
+    scale: 1.1;
+    box-shadow: #d9d9d9d9 0.5rem 0.25rem 1rem 0.5rem;
+  }
+}

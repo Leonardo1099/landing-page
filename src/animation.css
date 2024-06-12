@@ -1,0 +1,22 @@
+@keyframes mover{
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes brilhar{
+    0% {
+        box-shadow: 0 0 5px #fff;    
+    }
+    50% {
+        box-shadow: 0 0 20px #fff;    
+    }
+    100%{
+        box-shadow: 0 0 5px #fff;    
+    }
+}

@@ -1,10 +1,13 @@
 import "./App.css";
-import Contato from "./components/Contato";
+import "./animation.css"
+import Contato from "./components/Contact";
 import Form from "./components/Form";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Localization from "./components/Localization";
 import Sobre from "./components/Sobre";
 import Tickets from "./components/Tickets";
+
 
 function App() {
   return (
@@ -22,6 +25,7 @@ function App() {
       <Header />
       <Hero />
       <Tickets />
+      <Localization/>
       <Sobre/>
       <Contato/>
       <Form />

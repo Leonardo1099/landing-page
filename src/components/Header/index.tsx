@@ -11,9 +11,9 @@ function Header() {
           <li><a href="#section-sobre">Sobre</a></li>
           <li><a href="">Cronograma</a></li>
           <li><a href="#section-tickets">Ingressos</a></li>
-          <li><a href="">Localização</a></li>
+          <li><a href="#section-localization">Localização</a></li>
           <li><a href="#section-form">Newsletter</a></li>
-          <li><a href="section-contato">Contato</a></li>
+          <li><a href="#section-contact">Contato</a></li>
         </ul>
       </nav>
     </header>

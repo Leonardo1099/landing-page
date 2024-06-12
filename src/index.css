@@ -18,11 +18,14 @@
   width: 30.9rem;
   cursor: pointer;
   transition: 1.3s;
+  animation: mover 2s infinite, brilhar 1.5s infinite;
   &:hover{
     background-color: #ffffff;
     color: #ff1493;
   }
 }
+
+
 
 .h2-default {
   font-size: 4rem;
@@ -42,6 +45,8 @@
   background-color: #812be2;
   border-radius: 2rem;
 }
+
+/* Sobre.css */
 #section-sobre{
   padding: 2rem;
   background-color: #812be2;
@@ -52,4 +57,17 @@
   font-size: 3rem;
   color: #ffd700;
   text-shadow: 1px 2px 1px black;
+}
+.h2-default {
+  font-size: 4rem;
+  color: #ffd700;
+  text-shadow: 1px 2px 1px black;
+}
+
+/* Contato.css */
+#section-contact{
+  width: 139vh;
+  padding: 2rem;
+  background-color: #812be2;
+  border-radius: 2rem;
 }

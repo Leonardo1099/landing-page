@@ -5,7 +5,7 @@ function Sobre() {
       <div>
         <h3 className="h3-default">Sobre a AnimeConnect</h3>
 
-        <p>
+        <p className="p-default">
           Bem-vindo à AnimeConnect, sua ponte para o universo vibrante e
           empolgante dos animes e cosplays! Somos uma comunidade apaixonada,
           dedicada a trazer os fãs de anime juntos através de eventos cosplay
@@ -19,9 +19,9 @@ function Sobre() {
       </div>
 
       <div>
-        <h3>Comunidade:</h3>
-        <p>
-          A AnimeConnect é mais do que apenas eventos; é uma comunidade. Aqui,
+        <h3 className="h3-default">Comunidade:</h3>
+        <p className="p-default">
+          A AnimeConnect é mais do que apenas eventos, é uma comunidade. Aqui,
           você pode encontrar pessoas que entendem e compartilham sua paixão.
           Troque dicas de cosplay, discuta seus animes favoritos e faça parte de
           um grupo acolhedor que apoia a expressão artística e a paixão pelo
@@ -30,8 +30,8 @@ function Sobre() {
       </div>
 
       <div>
-        <h3>Inclusão: </h3>
-        <p>
+        <h3 className="h3-default">Inclusão: </h3>
+        <p className="p-default">
           Acreditamos na inclusão e no respeito mútuo. Nossa comunidade é um
           lugar onde todos são bem-vindos, independentemente de sua experiência
           com cosplay ou o nível de conhecimento sobre anime.
@@ -39,13 +39,15 @@ function Sobre() {
       </div>
 
       <div>
-        <h3>Junte-se a Nós:</h3>
+        <h3 className="h3-default">Junte-se a Nós:</h3>
 
-        <p>
+        <p className="p-default">
           Se você ama anime e cosplay tanto quanto nós, a AnimeConnect é o seu
           lugar. Siga-nos nas redes sociais, inscreva-se em nossa newsletter e
-          não perca nenhum dos nossos próximos eventos! AnimeConnect -
-          Conectando você ao mundo do anime, um cosplay de cada vez.
+          não perca nenhum dos nossos próximos eventos!
+          <br />
+          AnimeConnect - Conectando você ao mundo do anime, um cosplay de cada
+          vez.
         </p>
       </div>
     </section>

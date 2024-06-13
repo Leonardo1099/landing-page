@@ -71,3 +71,19 @@
   background-color: #812be2;
   border-radius: 2rem;
 }
+
+/* Localização.css */
+#section-localization{
+  width: 139vh;
+  padding: 2rem;
+  background-color: #812be2;
+  border-radius: 2rem;
+}
+
+/* Cronograma.css */
+#section-cronograma{
+  width: 139vh;
+  padding: 2rem;
+  background-color: #812be2;
+  border-radius: 2rem;
+}

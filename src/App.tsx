@@ -1,6 +1,7 @@
 import "./App.css";
 import "./animation.css"
 import Contato from "./components/Contact";
+import Cronograma from "./components/Cronograma";
 import Form from "./components/Form";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -25,9 +26,10 @@ function App() {
       <Header />
       <Hero />
       <Tickets />
+      <Cronograma/>
       <Localization/>
-      <Sobre/>
       <Contato/>
+      <Sobre/>
       <Form />
     </div>
   );

@@ -1,4 +1,5 @@
 import React from 'react';
+import './style.css';
 
 interface ScheduleItem {
   time: string;
@@ -56,35 +57,33 @@ const AnimeFestSchedule: React.FC = () => {
 
   return (
     <section id='section-cronograma'>
-        <table>
-    <div>
-      {schedule.map((daySchedule) => (
-        <div key={daySchedule.day}>
-          <h2>{daySchedule.day}</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Horário</th>
-                <th>Evento</th>
-                <th>Local</th>
-                <th>Descrição</th>
-              </tr>
-            </thead>
-            <tbody>
-              {daySchedule.schedule.map((item, index) => (
-                <tr key={index}>
-                  <td>{item.time}</td>
-                  <td>{item.event}</td>
-                  <td>{item.location}</td>
-                  <td>{item.description}</td>
+      <div>
+        {schedule.map((daySchedule) => (
+          <div key={daySchedule.day}>
+            <h2>{daySchedule.day}</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Horário</th>
+                  <th>Evento</th>
+                  <th>Local</th>
+                  <th>Descrição</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      ))}
-    </div>
-    </table>
+              </thead>
+              <tbody>
+                {daySchedule.schedule.map((item, index) => (
+                  <tr key={index}>
+                    <td>{item.time}</td>
+                    <td>{item.event}</td>
+                    <td>{item.location}</td>
+                    <td>{item.description}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        ))}
+      </div>
     </section>
   );
 };
